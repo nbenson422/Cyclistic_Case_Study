@@ -644,7 +644,7 @@ ggplot(cyclistic_clean, aes(member_casual, fill = member_casual)) +
   labs(x = "Casuals and Members", y = "Ride Count", title = "Chart01 - Casual vs. Member Ride Share")
 ```
 
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![members_vs_casual](https://user-images.githubusercontent.com/106843890/172061315-2dcaa892-95cd-4e2f-9354-2e0876a986a3.png)
 
 ###### Month
 
@@ -724,7 +724,7 @@ ggplot(cyclistic, aes(year_month, fill = member_casual)) +
          coord_flip()
 ```
 
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![month](https://user-images.githubusercontent.com/106843890/172061316-3762cd34-1c3b-42c2-bdac-aefaf5a50fc5.png)
 
 Let’s look at what we learned and can infer from this chart:
 
@@ -766,7 +766,7 @@ data.frame(month, mean_temperature_chicago) %>%
   theme(axis.text.x = element_text(angle = 70, hjust = 1))
 ```
 
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![temperature](https://user-images.githubusercontent.com/106843890/172061317-02444796-2ad5-46e6-9bcb-4c7b0199f60f.png)
 
 Main takeaway when comparing temperature data to ride share data:
 
@@ -812,7 +812,7 @@ ggplot(cyclistic, aes(weekday, fill = member_casual)) +
   coord_flip()
 ```
 
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+![weekday](https://user-images.githubusercontent.com/106843890/172061318-fe9548c7-b44c-47cc-adba-06b1cb708c12.png)
 
 Things to take note of from this data/chart:
 
@@ -868,7 +868,7 @@ cyclistic %>%
   theme(axis.text.x = element_text(angle = 50, hjust = 1))
 ```
 
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![hour](https://user-images.githubusercontent.com/106843890/172061312-870f6148-5fd9-48fc-9788-3af04f71c83b.png)
 
 What we can see from this chart:
 
@@ -896,8 +896,7 @@ cyclistic %>%
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(axis.text.x = element_text(size = 8))
 ```
-
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![hour_weekday_facet](https://user-images.githubusercontent.com/106843890/172061314-6bc09584-9a3c-4a2c-ad04-99f05e069c13.png)
 
 Looking at this chart, there is a clear difference between days in the
 middle of the week and the weekend. Let’s look at each separately and
@@ -917,7 +916,7 @@ cyclistic %>%
     theme(axis.text.x = element_text(size = 8))
 ```
 
-![](Cyclistic_Report1_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+![weekday_vs_weekend](https://user-images.githubusercontent.com/106843890/172061319-0b67d1f7-79a3-4611-b5d0-d54d17b515bf.png)
 
 Key differences between the two charts:
 
